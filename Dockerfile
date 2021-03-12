@@ -10,10 +10,10 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install wheel Pyrogram TgCrypto
 RUN python -m pip install pytgcalls ffmpeg-python psutil
 
-RUN wget -q https://github.com/dashezup/tgvc-userbot/archive/dev.tar.gz && \
-    tar xf dev.tar.gz && rm dev.tar.gz
+RUN wget -q https://github.com/dashezup/tgvc-userbot/archive/radio.tar.gz && \
+    tar xf radio.tar.gz && rm radio.tar.gz
 
-WORKDIR /tgvc-userbot-dev
+WORKDIR /tgvc-userbot-radio
 CMD python3 main.py
 
 # docker build -t tgcalls .
